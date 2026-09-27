@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Royal Cuts is a modern barbershop for sharp cuts, clean fades, and traditional grooming.">
+    <title>Royal Cuts v1.2 | Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1900&q=85" fetchpriority="high">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+    <!-- Page loading animation: JavaScript hides this overlay when all page assets are ready. -->
+    <div class="page-loader" id="pageLoader" role="status" aria-label="Loading Royal Cuts">
+        <div class="loader-content">
+            <div class="loader-mark">RC</div>
+            <p>Preparing your cut</p>
+            <div class="loader-bar" aria-hidden="true"></div>
+        </div>
+    </div>
+
+    <!-- Navigation: links point to real sections and the button is controlled on mobile by JavaScript. -->
+    <header class="navbar">
+        <a class="logo" href="#home"><span class="logo-mark">RC</span> Royal Cuts</a>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="nav-cta" href="#contact">Book now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero: a clear headline and call to action make the purpose of the site obvious. -->
+        <section class="hero" id="home">
+            <div class="container hero-content reveal">
+                <span class="eyebrow">Downtown barbershop · Est. 2014</span>
+                <h1>Sharp fades.<br>Sharper standards.</h1>
+                <p class="hero-copy">Modern barbering built around great haircuts, attention to detail, and an experience worth coming back for.</p>
+                <a class="button" href="#contact">Book an appointment</a>
+                <a class="button button-outline" href="#services">Explore services</a>
+            </div>
+        </section>
+
+        <!-- Services: three core services show visitors exactly what they can book. -->
+        <section class="section services" id="services">
+            <div class="container reveal">
+                <div class="section-heading"><div><span class="eyebrow">The menu</span><h2>Our services</h2></div><p>Precision grooming, classic technique, and a relaxed chair for every kind of style.</p></div>
+                <div class="service-container">
+                    <article class="service-card"><span class="number">01 / CLASSIC</span><h3>Classic Haircut</h3><p>A clean, tailored cut finished with styling advice for your everyday look.</p><div class="price">$20 · 45 min</div></article>
+                    <article class="service-card"><span class="number">02 / SIGNATURE</span><h3>Skin Fade</h3><p>A sharp fade blended smoothly from the skin upward by an experienced barber.</p><div class="price">$25 · 50 min</div></article>
+                    <article class="service-card"><span class="number">03 / TRADITIONAL</span><h3>Beard Grooming</h3><p>Professional trimming, shaping, and detailing for a beard that fits your face.</p><div class="price">$15 · 30 min</div></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About: this section explains the values behind the fictional Royal Cuts brand. -->
+        <section class="section about" id="about">
+            <div class="container about-grid reveal">
+                <div class="about-image" role="img" aria-label="Barber giving a client a haircut"></div>
+                <div class="about-copy"><span class="eyebrow">The Royal standard</span><h2>More than just a haircut.</h2><p>At Royal Cuts, we believe a haircut is about confidence, style, and making every customer feel their best. Our barbers combine old-school craft with a modern, welcoming atmosphere.</p><p>Come in for the cut. Stay for the conversation.</p><div class="stats"><div><strong>10+</strong><span>Years of craft</span></div><div><strong>4.9</strong><span>Average rating</span></div><div><strong>2k+</strong><span>Sharp clients</span></div></div></div>
+            </div>
+        </section>
+
+        <!-- Gallery: responsive images give the visitor a visual feel for the shop and its work. -->
+        <section class="section gallery" id="gallery">
+            <div class="container reveal"><span class="eyebrow">Fresh from the chair</span><h2>Our work</h2><p class="gallery-intro">A few of our favorite looks, crafted with precision and a little personality.</p><div class="gallery-container">
+                <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&q=85" alt="Barber working on a haircut" loading="lazy" decoding="async"><span>Classic cut</span></figure>
+                <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=85" alt="Freshly styled modern haircut" loading="lazy" decoding="async"><span>Clean fade</span></figure>
+                <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0c8c7f0d?auto=format&fit=crop&w=700&q=85" alt="Barber trimming a client's hair" loading="lazy" decoding="async"><span>In the chair</span></figure>
+                <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=700&q=85" alt="Barber styling hair with scissors" loading="lazy" decoding="async"><span>Sharp details</span></figure>
+            </div></div>
+        </section>
+
+        <!-- Contact: the form is a front-end demo and gives feedback without needing a server. -->
+        <section class="section contact" id="contact">
+            <div class="container contact-grid reveal">
+                <div class="contact-info"><span class="eyebrow">Come see us</span><h2>Ready for a fresh look?</h2><p>Contact Royal Cuts today and let us get you ready for your next big moment.</p><div class="details"><div><strong>Visit</strong>142 5th Street, Downtown</div><div><strong>Call</strong>(555) 123-4567</div><div><strong>Hours</strong>Mon-Sat: 9AM - 7PM</div></div></div>
+                <form class="contact-form" id="contactForm">
+                    <label>Name<input name="name" type="text" placeholder="Your name" required></label>
+                    <label>Email<input name="email" type="email" placeholder="you@example.com" required></label>
+                    <label>Service<select name="service" required><option value="">Choose service</option><option>Classic Haircut</option><option>Skin Fade</option><option>Beard Grooming</option></select></label>
+                    <label>Preferred day<input name="day" type="date" required></label>
+                    <label class="full">Message<textarea name="message" placeholder="Anything we should know?"></textarea></label>
+                    <button class="button" type="submit">Send request</button>
+                    <p class="form-message full" id="formMessage" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: quick links repeat the main destinations for easy navigation at the bottom. -->
+    <footer>
+        <div class="container footer-container"><div><h3>ROYAL CUTS</h3><p>Professional grooming with style,<br>precision, and confidence.</p></div><div><h4>Quick links</h4><a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a></div><div><h4>Contact</h4><p>(555) 123-4567</p><p>info@royalcuts.com</p></div></div>
+        <div class="container copyright">&copy; <span id="year"></span> Royal Cuts. All rights reserved.</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
